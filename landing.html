@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Casino Bonus Hub — Latest Bonuses</title>
+<meta name="description" content="Latest casino bonuses, hand-picked and updated weekly. Check top offers and claim free spins or welcome packages." />
+<style>
+  :root{
+    --red:#e31b23; --black:#0b0b0b; --white:#fff; --yellow:#ffd84a;
+    --card-gap:12px; --max-width:1200px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter, system-ui, Arial;background:var(--white);color:var(--black);-webkit-font-smoothing:antialiased}
+  .container{max-width:var(--max-width);margin:0 auto;padding:16px}
+
+  header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0}
+  .logo{display:flex;gap:12px;align-items:center}
+  .logo svg{width:60px;height:60px}
+  .tagline{font-weight:900;font-size:18px}
+  .get-bonus-btn{background:var(--red);color:var(--white);padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:800;border:4px solid var(--black);box-shadow:0 4px 0 var(--black)}
+
+  .hero{background:var(--red);color:var(--white);padding:28px;border-radius:8px;margin-top:12px;box-shadow:0 8px 0 var(--black)}
+  .hero h1{margin:0;font-size:clamp(28px,6vw,44px);font-weight:900}
+  .hero p{margin:10px 0 0;font-size:16px}
+
+  .controls{display:flex;gap:12px;align-items:center;margin-top:14px;flex-wrap:wrap}
+  .search{flex:1;min-width:160px}
+  .chip{padding:8px 12px;border-radius:999px;border:3px solid var(--black);background:var(--white);font-weight:800;cursor:pointer}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--card-gap);margin-top:16px}
+  .card{border:4px solid var(--black);padding:14px;border-radius:6px;background:var(--white);display:flex;flex-direction:column;justify-content:space-between}
+  .card h3{margin:0 0 6px;font-size:16px}
+  .card p{margin:0 0 12px;font-size:13px;color:#222}
+  .claim{align-self:flex-end;background:var(--red);color:var(--white);padding:10px 12px;border-radius:6px;text-decoration:none;font-weight:900;display:inline-block;border:3px solid var(--black);box-shadow:0 4px 0 var(--black)}
+  .meta{font-size:12px;margin-bottom:8px;color:#333}
+
+  .yellow-banner{background:var(--yellow);padding:12px;border-radius:6px;margin-top:18px;border:4px solid var(--black);font-weight:800}
+
+  footer{margin-top:26px;padding-top:12px;border-top:6px solid var(--black);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  .small{font-size:12px;color:#333}
+
+  /* Accessibility helpers */
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo" aria-label="Casino Bonus Hub">
+        <!-- Square logo SVG -->
+        <svg viewBox="0 0 240 240" role="img" aria-hidden="false" aria-label="Casino Bonus Hub square logo">
+          <rect x="6" y="6" width="228" height="228" fill="#fff" stroke="#0b0b0b" stroke-width="12" rx="6"/>
+          <text x="120" y="80" text-anchor="middle" font-weight="700" font-size="28" fill="#0b0b0b">CASINO</text>
+          <text x="120" y="120" text-anchor="middle" font-weight="900" font-size="44" fill="#e31b23">BONUS</text>
+          <text x="120" y="165" text-anchor="middle" font-weight="900" font-size="40" fill="#e31b23">HUB</text>
+          <g transform="translate(200,190)">
+            <path d="M0,-6 c10,0 20,0 30,0 6,0 10,6 10,12 0,16 -20,30 -40,30 -16,0 -30,-12 -30,-26 0,-12 10,-16 30,-16z" fill="#0b0b0b"/>
+            <text x="10" y="12" fill="#fff" font-size="20" font-weight="800" text-anchor="middle">$</text>
+          </g>
+        </svg>
+        <div>
+          <div class="tagline">CASINO BONUS HUB</div>
+          <div style="font-size:12px;color:#222;margin-top:4px">No fluff. Just wins.</div>
+        </div>
+      </div>
+
+      <a class="get-bonus-btn" href="#offers">GET BONUS</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="landing-hero">
+        <h1 id="landing-hero">Top bonuses today — hand-picked & updated weekly</h1>
+        <p>Claim welcome packages, free spins, and exclusive codes. We list only offers with clear T&Cs and verified payouts.</p>
+
+        <div class="controls">
+          <input class="search" id="search" placeholder="Search casinos, bonuses, or tags (crypto, us-friendly)"/>
+          <button class="chip" data-filter="all">All</button>
+          <button class="chip" data-filter="crypto">Crypto</button>
+          <button class="chip" data-filter="us">US-Friendly</button>
+          <button class="chip" data-filter="no-dep">No-Deposit</button>
+        </div>
+      </section>
+
+      <div class="yellow-banner" role="status">⭐ WEEKLY UPDATE: New exclusive offers drop every Saturday. Subscribe on the funnel page for early access.</div>
+
+      <section id="offers" class="grid" aria-live="polite">
+        <!-- Example cards. Replace the hrefs with real affiliate links -->
+        <article class="card" data-tags="crypto">
+          <div>
+            <div class="meta">GEMINI CASINO — Crypto</div>
+            <h3>Welcome 100% up to $300 + 150 FS</h3>
+            <p>Fast payouts, crypto friendly. Check bonus code and wagering. T&Cs apply.</p>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center;justify-content:space-between;margin-top:12px">
+            <a class="claim" href="#" onclick="openVendor(event,'https://example.com/gemini')" target="_blank" rel="noopener">CLAIM BONUS →</a>
+            <div style="font-weight:900;color:#222">HOT</div>
+          </div>
+        </article>
+
+        <article class="card" data-tags="us no-dep">
+          <div>
+            <div class="meta">DIMEBIT CASINO — US-Friendly</div>
+            <h3>$25 No Deposit + 50 FS</h3>
+            <p>Limited-time no-deposit offer for new accounts. Withdrawal rules apply.</p>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center;justify-content:space-between;margin-top:12px">
+            <a class="claim" href="#" onclick="openVendor(event,'https://example.com/dimebit')" target="_blank" rel="noopener">CLAIM BONUS →</a>
+            <div style="font-weight:900;color:#222">NEW</div>
+          </div>
+        </article>
+
+        <article class="card" data-tags="crypto no-dep">
+          <div>
+            <div class="meta">STAKZ — Crypto</div>
+            <h3>50 Free Spins on selected slots</h3>
+            <p>Instant spins after sign up, crypto deposits supported.</p>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center;justify-content:space-between;margin-top:12px">
+            <a class="claim" href="#" onclick="openVendor(event,'https://example.com/stakz')" target="_blank" rel="noopener">CLAIM BONUS →</a>
+            <div style="font-weight:900;color:#222">TREND</div>
+          </div>
+        </article>
+
+        <!-- Add more cards... -->
+      </section>
+    </main>
+
+    <footer>
+      <div class="small">© Casino Bonus Hub — Not gambling advice. Play responsibly. Terms & Privacy apply.</div>
+      <div><a href="funnel.html" class="chip" style="text-decoration:none">Subscribe</a></div>
+    </footer>
+  </div>
+
+<script>
+  // Simple filtering + search + open vendor helper
+  (function(){
+    const chips = document.querySelectorAll('.chip[data-filter]');
+    const cards = document.querySelectorAll('.card');
+    const search = document.getElementById('search');
+
+    function applyFilter(tag){
+      cards.forEach(c=>{
+        const tags = (c.getAttribute('data-tags')||'').toLowerCase();
+        if(tag === 'all' || tags.indexOf(tag) !== -1){
+          c.style.display = '';
+        } else {
+          c.style.display = 'none';
+        }
+      });
+    }
+    chips.forEach(ch=>{
+      ch.addEventListener('click', ()=> {
+        applyFilter(ch.dataset.filter);
+      });
+    });
+
+    // basic search across headings & meta
+    search.addEventListener('input', function(){
+      const q = this.value.trim().toLowerCase();
+      cards.forEach(c=>{
+        if(!q){ c.style.display=''; return; }
+        const text = (c.innerText || '').toLowerCase();
+        c.style.display = text.indexOf(q) !== -1 ? '' : 'none';
+      });
+    });
+
+    // If landed from funnel with email query, show small toast
+    const params = new URLSearchParams(window.location.search);
+    if(params.get('e')){
+      const e = decodeURIComponent(params.get('e'));
+      const toast = document.createElement('div');
+      toast.textContent = 'Thanks — a confirmation was sent to ' + e;
+      toast.style.position='fixed';toast.style.left='50%';toast.style.transform='translateX(-50%)';
+      toast.style.bottom='18px';toast.style.background='var(--black)';toast.style.color='var(--white)';
+      toast.style.padding='10px 14px';toast.style.borderRadius='8px';toast.style.fontWeight='800';
+      toast.style.border = '3px solid var(--yellow)';toast.style.zIndex='9999';
+      document.body.appendChild(toast);
+      setTimeout(()=>toast.remove(),4500);
+    }
+  })();
+
+  function openVendor(e, url){
+    e.preventDefault();
+    // Replace with proper affiliate redirect server or tracking pixel
+    window.open(url, '_blank', 'noopener');
+    // small conversion ping could be added here
+  }
+</script>
+</body>
+</html>
