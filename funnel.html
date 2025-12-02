@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Casino Bonus Hub — Quick Bonus Funnel</title>
+<meta name="description" content="Daily updated casino bonuses, free spins, and no-deposit offers. No fluff — just wins." />
+<link rel="icon" href="#favicon">
+<style>
+  /* Neo-brutalist, mobile-first styles. Palette: red, black, white, yellow */
+  :root{
+    --red:#e31b23;
+    --black:#0b0b0b;
+    --white:#ffffff;
+    --yellow:#ffd84a;
+    --max-width:1100px;
+    --radius:6px;
+    --bold:700;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family: "Inter", system-ui, -apple-system, "Helvetica Neue", Arial;
+    background:var(--white);
+    color:var(--black);
+    -webkit-font-smoothing:antialiased;
+    line-height:1.25;
+  }
+
+  .wrap{max-width:var(--max-width);margin:0 auto;padding:18px;}
+  header{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand svg{width:48px;height:48px}
+  h1{font-size:clamp(28px,7vw,44px);margin:12px 0 6px;letter-spacing:-0.02em;font-weight:900;}
+  .hero-sub{font-size:clamp(14px,3.4vw,18px);margin:0 0 18px;color: #111}
+
+  .hero {
+    background:var(--red);
+    color:var(--white);
+    padding:22px;
+    border-radius:var(--radius);
+    box-shadow: 0 6px 0 var(--black);
+  }
+
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    padding:12px 18px;border-radius:8px;font-weight:800;text-decoration:none;cursor:pointer;
+    border:4px solid var(--black);
+    box-shadow:0 4px 0 var(--black);
+  }
+  .btn-primary{background:var(--black);color:var(--white)}
+  .btn-ghost{background:transparent;color:var(--black);border-color:var(--black)}
+  .btn-yellow{background:var(--yellow);color:var(--black)}
+
+  .panel{
+    margin-top:18px;padding:18px;border:4px solid var(--black);border-radius:6px;
+  }
+  .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px}
+  .feature-card{background:var(--white);border:3px solid var(--black);padding:12px;border-radius:6px}
+  .feature-card h3{margin:4px 0;font-size:16px}
+  .feature-card p{margin:0;color:#222;font-size:13px}
+
+  /* Email form */
+  form{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  input[type="email"]{
+    flex:1;min-width:180px;padding:12px;border:3px solid var(--black);border-radius:6px;font-weight:700;
+  }
+  .small{font-size:12px;color:#222;margin-top:8px}
+  .yellow-bar{background:var(--yellow);color:var(--black);padding:10px;border-radius:4px;font-weight:800;margin-top:14px;border:3px solid var(--black)}
+
+  footer{margin-top:26px;padding-top:12px;border-top:6px solid var(--black);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+  .legal{font-size:12px;color:#222}
+  /* Responsive tweaks */
+  @media(min-width:900px){
+    header{padding:6px 0}
+    .brand svg{width:64px;height:64px}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand" aria-hidden="true">
+        <!-- Circle version of logo as inline SVG -->
+        <svg viewBox="0 0 200 200" role="img" aria-label="Casino Bonus Hub logo">
+          <circle cx="100" cy="100" r="96" fill="#fff" stroke="#0b0b0b" stroke-width="12"/>
+          <text x="100" y="70" font-family="Arial" text-anchor="middle" font-weight="700" font-size="26" fill="#0b0b0b">CASINO</text>
+          <text x="100" y="105" font-family="Arial" text-anchor="middle" font-weight="900" font-size="34" fill="#e31b23">BONUS</text>
+          <text x="100" y="140" font-family="Arial" text-anchor="middle" font-weight="900" font-size="28" fill="#e31b23">HUB</text>
+          <g transform="translate(140,138)">
+            <path d="M0,-6 c10,0 20,0 30,0 6,0 10,6 10,12 0,16 -20,30 -40,30 -16,0 -30,-12 -30,-26 0,-12 10,-16 30,-16z" fill="#0b0b0b"/>
+            <text x="10" y="12" fill="#fff" font-size="20" font-weight="800" text-anchor="middle">$</text>
+          </g>
+        </svg>
+      </div>
+
+      <nav aria-label="Primary actions">
+        <a class="btn btn-primary" href="#claim">GET BONUS</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <h1 id="hero-heading">NO FLUFF. JUST WINS.</h1>
+        <p class="hero-sub">Daily updated casino bonuses, free spins, and no-deposit offers. We track the best so you don't have to.</p>
+
+        <div class="cta-row">
+          <a href="#claim" class="btn btn-ghost" role="button">FIND BEST BONUS</a>
+          <a href="#rank" class="btn btn-primary" role="button">VIEW RANKINGS</a>
+        </div>
+      </section>
+
+      <section class="panel" id="claim" aria-labelledby="claim-h">
+        <h2 id="claim-h" style="margin:0;font-size:18px">Get Daily Bonuses</h2>
+        <p class="small">Subscribe and we'll shoot you the best no-deposit and free spin offers. Unsubscribe anytime.</p>
+
+        <!-- Honeypot + basic validation -->
+        <form id="leadForm" action="javascript:void(0);" novalidate>
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" type="email" placeholder="Enter your email" required aria-required="true" />
+
+          <!-- Honeypot field - hide from humans -->
+          <input type="text" id="hp_field" name="hp_field" style="position:absolute;left:-9999px;top:auto;opacity:0" tabindex="-1" autocomplete="off">
+
+          <button id="submitBtn" class="btn btn-primary" type="submit">SUBSCRIBE</button>
+          <div id="formMsg" style="width:100%;margin-top:8px"></div>
+        </form>
+
+        <div class="yellow-bar" role="status">⭐ WEEKLY UPDATE: Check back Saturday for fresh casino bonuses and exclusive offers!</div>
+      </section>
+
+      <section style="margin-top:14px">
+        <div class="features" aria-live="polite">
+          <div class="feature-card"><h3>Verified Payouts</h3><p>We only list casinos with proven fast withdrawals and legit audits.</p></div>
+          <div class="feature-card"><h3>Crypto & USD</h3><p>Filters for crypto-friendly and US-accessible offers.</p></div>
+          <div class="feature-card"><h3>No Fluff</h3><p>Only the offers that matter — clear T&Cs and real value.</p></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="legal">© <strong>Casino Bonus Hub</strong> — No gambling advice. Play responsibly.</div>
+      <div><a href="landing.html" class="btn btn-yellow" title="Proceed to site">Continue to site</a></div>
+    </footer>
+  </div>
+
+<script>
+  // Simple client-side validation + redirect to landing with email encoded in query string
+  (function(){
+    const form = document.getElementById('leadForm');
+    const email = document.getElementById('email');
+    const hp = document.getElementById('hp_field');
+    const msg = document.getElementById('formMsg');
+
+    form.addEventListener('submit', function(e){
+      msg.textContent='';
+      // Honeypot check - bots will fill this
+      if(hp.value.trim() !== ''){
+        msg.textContent = 'Bad submission.';
+        return;
+      }
+      const val = email.value.trim();
+      // basic email regex (reasonable)
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if(!re.test(val)){
+        msg.textContent = 'Enter a valid email.';
+        msg.style.color = 'var(--red)';
+        email.focus();
+        return;
+      }
+      // Fake "submit" - in real life replace with fetch to your backend / mailchimp / webhook
+      msg.textContent = 'Almost there — redirecting...';
+      msg.style.color = 'var(--black)';
+      // add small delay to show message
+      setTimeout(function(){
+        // Pass email to landing page (encoded)
+        const dest = 'landing.html?e=' + encodeURIComponent(val);
+        window.location.href = dest;
+      }, 700);
+    });
+  })();
+</script>
+</body>
+</html>
